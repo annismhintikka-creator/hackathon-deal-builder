@@ -128,6 +128,14 @@ export default function HackathonDealBuilder() {
             ))}
             <option>Muu haaste</option>
           </select>
+{selectedChallenge === "Muu haaste" && (
+  <input
+    placeholder="Kirjoita haaste"
+    value={customChallenge}
+    onChange={(e) => setCustomChallenge(e.target.value)}
+  />
+)}
+
 
           <textarea
             placeholder="Arvo yritykselle"
