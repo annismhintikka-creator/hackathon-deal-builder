@@ -112,12 +112,14 @@ export default function HackathonDealBuilder() {
             onChange={(e) => setGroupName(e.target.value)}
           />
 
-          <select onChange={(e) => setSelectedCompany(e.target.value)}>
-            <option>Valitse yritys</option>
-            {data.companyOptions.map((c) => (
-              <option key={c}>{c}</option>
-            ))}
-          </select>
+         
+<input
+  placeholder="Yritys (kenelle myisit hackathonin)"
+  value={customCompany}
+  onChange={(e) => setCustomCompany(e.target.value)}
+/>
+``
+
 
           <select onChange={(e) => setSelectedChallenge(e.target.value)}>
             <option>Valitse haaste</option>
