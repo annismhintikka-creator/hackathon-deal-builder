@@ -78,7 +78,12 @@ export default function HackathonDealBuilder() {
   }, [data]);
 
   function saveSubmission() {
-    if (!selectedCompany || !selectedChallenge) return;
+ 
+if (!customCompany || !selectedChallenge) {
+  alert("Täytä yritys ja valitse haaste");
+  return;
+}
+
 
     const submission = {
       id: Math.random().toString(36),
