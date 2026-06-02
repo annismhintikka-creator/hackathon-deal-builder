@@ -84,7 +84,7 @@ export default function HackathonDealBuilder() {
       id: Math.random().toString(36),
       groupName: groupName || "Ryhmä",
      company: customCompany,
-      challenge: selectedChallenge === "Muu haaste" ? customChallenge : selectedChallenge,
+   challenge: selectedChallenge === "Muu haaste" ? customChallenge : selectedChallenge,
       valueForCompany,
       hackathonFocus
     };
