@@ -78,7 +78,7 @@ export default function HackathonDealBuilder() {
   }, [data]);
 
   function saveSubmission() {
- 
+
 if (!customCompany || !selectedChallenge) {
   alert("Täytä yritys ja valitse haaste");
   return;
